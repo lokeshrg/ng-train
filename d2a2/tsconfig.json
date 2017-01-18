@@ -6,9 +6,12 @@
     "module": "commonjs",
     "target": "es5",
     "sourceMap": true,
-    "rootDir": "ts",
-    "outDir": "js",
-    "noEmitOnError": true
+    "rootDir": "src",
+    "outDir": "dist",
+    "noEmitOnError": true,
+    "moduleResolution": "node", //classic [https://www.typescriptlang.org/docs/handbook/module-resolution.html#classic]
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true //even in ES6, decorators are not standardized !? so inform compiler
   }
 /*,
   "exclude": [
