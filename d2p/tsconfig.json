@@ -1,0 +1,20 @@
+/**
+*
+*/
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "sourceMap": true,
+    "rootDir": "ts",
+    "outDir": "js",
+    "noEmitOnError": true
+  }
+/*,
+  "exclude": [
+    "node_modules"
+  ]
+  // as we have already mentioned rootDir, no need to mention node_modules as it is outside the rootDir folder
+  // if it is inside the rootDir, u can mention exclude option
+  */
+}
