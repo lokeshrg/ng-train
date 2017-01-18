@@ -6,22 +6,7 @@
     <!--<script src="js/module-eg.js"></script>
     <script src="js/main.js"></script>-->
     <script src="node_modules/systemjs/dist/system.js"></script>
-    <script>
-    System.config({
-        /*app key used here is custom - uit can be abc also
-        but the corresponding package and map keys should match*/
-       packages: {
-           app: {
-               main: 'main',
-               defaultExtension: "js"
-           }
-       },
-       map:{
-           app: "js" /*this is the folder[location] of the packages above*/
-       }
-    });
-    System.import('app'); /*this is the key used above*/
-    </script>
+    <script src="js/systemjs-config.js"></script>
 </head>
 <body>
 <h2> day 1 revise</h2>
