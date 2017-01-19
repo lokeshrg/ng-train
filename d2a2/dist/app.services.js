@@ -9,22 +9,40 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
-var quotes = [
-    { line: "Line1", author: "Auth1" },
-    { line: "Line2", author: "Auth2" },
-    { line: "Line3", author: "Auth3" },
-    { line: "Line4", author: "Auth4" }
-];
+var http_1 = require("@angular/http");
+var quotes = [];
+//     {line:"Line1", author:"Auth1"},
+//     {line:"Line2", author:"Auth2"},
+//     {line:"Line3", author:"Auth3"},
+//     {line:"Line4", author:"Auth4"}
+// ];
 var QuoteService = (function () {
-    function QuoteService() {
+    function QuoteService(ht) {
+        this.ht = ht;
+        this.restUrl = "http://localhost:2403/my-quotes";
+        this.myHeaders = new http_1.Headers({ "Content-Type": "application/json" });
+        this.options = new http_1.RequestOptions({ headers: this.myHeaders });
         this.svcQuote = quotes;
     }
+    //CRUD ops
+    QuoteService.prototype.getAllQuotes = function () {
+        return this.ht.get(this.restUrl, this.options);
+    };
+    QuoteService.prototype.addQuote = function (quote) {
+        return this.ht.post(this.restUrl, quote);
+    };
+    QuoteService.prototype.removeAllQuotes = function () {
+        this.ht.delete(this.restUrl);
+    };
+    QuoteService.prototype.removeQuote = function (q) {
+        return this.ht.delete(this.restUrl + "/" + q.id);
+    };
     QuoteService.prototype.getRandomQuote = function () {
         return this.svcQuote[Math.floor(Math.random() * quotes.length)];
     };
     QuoteService = __decorate([
         core_1.Injectable(), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [http_1.Http])
     ], QuoteService);
     return QuoteService;
 }());

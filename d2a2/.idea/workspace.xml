@@ -2,85 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c1964ed-a30b-4551-9da7-20cc928c4a3b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/typescript-compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/@angular/http/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/@angular/http/bundles/http-testing.umd.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/@angular/http/bundles/http.umd.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/@angular/http/bundles/http.umd.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/@angular/http/index.d.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/@angular/http/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/@angular/http/index.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/@angular/http/index.metadata.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/@angular/http/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/@angular/http/src/backends/browser_jsonp.d.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/@angular/http/src/backends/browser_jsonp.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/@angular/http/src/backends/browser_jsonp.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/@angular/http/src/backends/browser_jsonp.metadata.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/@angular/http/src/backends/browser_xhr.d.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/@angular/http/src/backends/browser_xhr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/@angular/http/src/backends/browser_xhr.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/@angular/http/src/backends/browser_xhr.metadata.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/@angular/http/src/backends/jsonp_backend.d.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/@angular/http/src/backends/jsonp_backend.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/@angular/http/src/backends/jsonp_backend.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/@angular/http/src/backends/jsonp_backend.metadata.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/@angular/http/src/backends/xhr_backend.d.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/@angular/http/src/backends/xhr_backend.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/@angular/http/src/backends/xhr_backend.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/@angular/http/src/backends/xhr_backend.metadata.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/@angular/http/src/base_request_options.d.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/@angular/http/src/base_request_options.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/@angular/http/src/base_request_options.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/@angular/http/src/base_request_options.metadata.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/@angular/http/src/base_response_options.d.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/@angular/http/src/base_response_options.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/@angular/http/src/base_response_options.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/@angular/http/src/base_response_options.metadata.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/@angular/http/src/body.d.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/@angular/http/src/body.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/@angular/http/src/body.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/@angular/http/src/body.metadata.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/@angular/http/src/enums.d.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/@angular/http/src/enums.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/@angular/http/src/enums.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/@angular/http/src/enums.metadata.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/@angular/http/src/headers.d.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/@angular/http/src/headers.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/@angular/http/src/headers.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/@angular/http/src/headers.metadata.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/@angular/http/src/http.d.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/@angular/http/src/http.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/@angular/http/src/http.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/@angular/http/src/http.metadata.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/@angular/http/src/http_module.d.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/@angular/http/src/http_module.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/@angular/http/src/http_module.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/@angular/http/src/http_module.metadata.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/@angular/http/src/http_utils.d.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/@angular/http/src/http_utils.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/@angular/http/src/http_utils.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/@angular/http/src/http_utils.metadata.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/@angular/http/src/index.d.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/@angular/http/src/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/@angular/http/src/index.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/@angular/http/src/index.metadata.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/@angular/http/src/interfaces.d.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/@angular/http/src/interfaces.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/@angular/http/src/interfaces.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/@angular/http/src/interfaces.metadata.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../data/collection-0--5551703800810264662.wt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../data/collection-2--5551703800810264662.wt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../data/diagnostic.data/metrics.2017-01-19T08-33-41Z-00000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../data/diagnostic.data/metrics.interim" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../data/index-1--5551703800810264662.wt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../data/index-3--5551703800810264662.wt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../data/index-4--5551703800810264662.wt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../data/journal/WiredTigerLog.0000000001" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../data/journal/WiredTigerPreplog.0000000001" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../data/journal/WiredTigerPreplog.0000000002" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/app.component.js" afterPath="$PROJECT_DIR$/dist/app.component.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/app.component.js.map" afterPath="$PROJECT_DIR$/dist/app.component.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/app.models.js.map" afterPath="$PROJECT_DIR$/dist/app.models.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/app.module.js" afterPath="$PROJECT_DIR$/dist/app.module.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/app.module.js.map" afterPath="$PROJECT_DIR$/dist/app.module.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/app.services.js" afterPath="$PROJECT_DIR$/dist/app.services.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/app.services.js.map" afterPath="$PROJECT_DIR$/dist/app.services.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/entry.js.map" afterPath="$PROJECT_DIR$/dist/entry.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/app.component.html" afterPath="$PROJECT_DIR$/partials/app.component.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app.component.ts" afterPath="$PROJECT_DIR$/src/app.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app.module.ts" afterPath="$PROJECT_DIR$/src/app.module.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/system-config.js" afterPath="$PROJECT_DIR$/system-config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app.models.ts" afterPath="$PROJECT_DIR$/src/app.models.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app.services.ts" afterPath="$PROJECT_DIR$/src/app.services.ts" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -108,11 +52,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.component.ts" pinned="false" current-in-tab="true">
+      <file leaf-file-name="app.component.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="24" lean-forward="false" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+            <state relative-caret-position="498">
+              <caret line="64" column="5" lean-forward="false" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
               <folding>
                 <element signature="e#1#41#0" expanded="true" />
               </folding>
@@ -120,21 +64,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.services.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app.services.ts">
+      <file leaf-file-name="app.models.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app.models.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="7" column="35" lean-forward="false" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+            <state relative-caret-position="34">
+              <caret line="2" column="14" lean-forward="false" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.component.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="app.services.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app.services.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="261">
+              <caret line="27" column="49" lean-forward="true" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="49" />
+              <folding>
+                <element signature="e#1#42#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.component.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/partials/app.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="19" lean-forward="false" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+            <state relative-caret-position="269">
+              <caret line="20" column="55" lean-forward="false" selection-start-line="20" selection-start-column="55" selection-end-line="20" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -148,13 +104,14 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/app.services.ts" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/system-config.js" />
         <option value="$PROJECT_DIR$/src/app.module.ts" />
-        <option value="$PROJECT_DIR$/partials/app.component.html" />
+        <option value="$PROJECT_DIR$/src/app.models.ts" />
         <option value="$PROJECT_DIR$/src/app.component.ts" />
+        <option value="$PROJECT_DIR$/src/app.services.ts" />
+        <option value="$PROJECT_DIR$/partials/app.component.html" />
       </list>
     </option>
   </component>
@@ -230,20 +187,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="d2a2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="d2a2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dist" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -253,6 +196,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -265,12 +213,21 @@
       <option name="presentableId" value="Default" />
       <updated>1484719089268</updated>
       <workItem from="1484719090672" duration="69000" />
-      <workItem from="1484805484181" duration="4233000" />
+      <workItem from="1484805484181" duration="12286000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4302000" />
+    <option name="totallyTimeSpent" value="12355000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1040" height="744" extended-state="6" />
@@ -278,8 +235,9 @@
     <layout>
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.249501" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -291,7 +249,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -306,14 +263,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/app.models.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -358,14 +307,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app.services.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="7" column="35" lean-forward="false" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -374,21 +315,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/partials/app.component.html">
+    <entry file="file://$PROJECT_DIR$/src/app.models.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="19" lean-forward="false" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+        <state relative-caret-position="34">
+          <caret line="2" column="14" lean-forward="false" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app.services.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="27" column="49" lean-forward="true" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="49" />
+          <folding>
+            <element signature="e#1#42#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="24" lean-forward="false" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+        <state relative-caret-position="498">
+          <caret line="64" column="5" lean-forward="false" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
           <folding>
             <element signature="e#1#41#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/partials/app.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="20" column="55" lean-forward="false" selection-start-line="20" selection-start-column="55" selection-end-line="20" selection-end-column="55" />
+          <folding />
         </state>
       </provider>
     </entry>

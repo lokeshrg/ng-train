@@ -1,16 +1,33 @@
 <h3>{{pageHeading}}</h3>
-<em>{{quote.line}}</em>  - {{quote.author}}
+<!--<em>{{quote.line}}</em>  - {{quote.author}}-->
 <br/>
 Counter is : <b>{{counter}}</b>
 <button (click)="incrementCount()">Count</button>
 
 <input type="number" [(ngModel)]="counter"/>
 <br/>
-{{msg}}<button (click)="getExternalData()">Get Data</button>
+<!--{{msg}}<button (click)="getExternalData()">Get Data</button>
 
 <ol>
     <li *ngFor="let d of details">
         {{d.fname}}
         {{d.lname}}
     </li>
-</ol>
+</ol>-->
+
+<button (click)="getQuotes()">Get All Quotes</button>
+<!--<ul>
+    <li *ngFor="let q of details">
+        {{q.id}}: <b> {{q.line}}</b> &#45;&#45; {{q.author}}
+    </li>
+</ul>-->
+<table></table>
+
+
+<input placeholder="enter quote..." type="text" id="aline" [(ngModel)]="newQuote.line"/>
+<input placeholder="enter author..." type="text" id="aauthor" [(ngModel)]="newQuote.author"/>
+<button (click)="addQuote()">Add this Quote</button>
+
+<input placeholder="enter quote..." type="text" id="rline" [(ngModel)]="oldQuote.line"/>
+<input placeholder="enter author..." type="text" id="rauthor" [(ngModel)]="oldQuote.author"/>
+<button (click)="removeQuote(oldQuote)">Remove this Quote</button>

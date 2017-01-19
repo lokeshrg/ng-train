@@ -12,13 +12,16 @@ var core_1 = require("@angular/core");
 var app_services_1 = require("./app.services");
 var http_1 = require("@angular/http");
 var AppComponent = (function () {
-    function AppComponent(ht) {
+    function AppComponent(ht, quoteSvc) {
         this.ht = ht;
+        this.quoteSvc = quoteSvc;
         this.pageHeading = "sample quote!";
+        this.newQuote = { id: "", line: "", author: "" };
+        this.oldQuote = { id: "", line: "", author: "" };
         this.msg = 'text';
         this._counter = 0;
-        var quoteSvc = new app_services_1.QuoteService();
-        this.quote = quoteSvc.getRandomQuote();
+        // let quoteSvc = new QuoteService();
+        // this.quote = quoteSvc.getRandomQuote();
     }
     AppComponent.prototype.getExternalData = function () {
         var _this = this;
@@ -27,6 +30,22 @@ var AppComponent = (function () {
             console.log("Success: " + response);
             _this.details = response.json();
         }, function (error) { return console.log("Error: " + error); }, function () { return console.log("Completed!"); });
+    };
+    AppComponent.prototype.getQuotes = function () {
+        var _this = this;
+        this.quoteSvc.getAllQuotes().subscribe(function (response) { return _this.details = response.json(); }, function (error) { return console.log("Error: " + error); }, function () { return console.log("Get Quotes request completed at: " + new Date()); });
+    };
+    AppComponent.prototype.addQuote = function () {
+        this.quoteSvc.addQuote(this.newQuote).subscribe(function (response) { return console.log("Added this quote:" + response); }, function (error) { return console.log("Error: " + error); }, function () { return console.log("Add quote request completed at: " + new Date()); });
+        // reset new quote
+        this.newQuote = { id: "", line: "", author: "" };
+    };
+    AppComponent.prototype.removeQuote = function (q) {
+        var _this = this;
+        this.oldQuote = Object.assign({}, q);
+        this.quoteSvc.removeQuote(this.oldQuote).subscribe(function (response) { return console.log("Removed this quote:" + _this.oldQuote); }, function (error) { return console.log("Error: " + error); }, function () { return console.log("Remove quote request completed at: " + new Date()); });
+        // reset new quote
+        this.oldQuote = { id: "", line: "", author: "" };
     };
     Object.defineProperty(AppComponent.prototype, "counter", {
         get: function () {
@@ -41,14 +60,14 @@ var AppComponent = (function () {
     AppComponent.prototype.incrementCount = function () {
         this.counter++;
     };
-    AppComponent = __decorate([
-        core_1.Component({
-            selector: "quote-app",
-            templateUrl: "./partials/app.component.html"
-        }), 
-        __metadata('design:paramtypes', [http_1.Http])
-    ], AppComponent);
     return AppComponent;
 }());
+AppComponent = __decorate([
+    core_1.Component({
+        selector: "quote-app",
+        templateUrl: "./partials/app.component.html"
+    }),
+    __metadata("design:paramtypes", [http_1.Http, app_services_1.QuoteService])
+], AppComponent);
 exports.AppComponent = AppComponent;
 //# sourceMappingURL=app.component.js.map
