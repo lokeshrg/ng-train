@@ -4,5 +4,7 @@
  and app is the parent component
  we are establishing communication through notify - event handler[emitter]-->
 <div *ngIf="selVid.id!=0" class="embed-responsive embed-responsive-16by9">
-    <iframe class="embed-responsive-item" src="{{selVid.url}}"></iframe>
+    <button (click)="closeVideo()">Close Video</button>
+    <iframe class="embed-responsive-item" [src]="selVid.url"></iframe>
+    <!-- src when in [] represents binding, no need to use {{selVid.url}} -->
 </div>

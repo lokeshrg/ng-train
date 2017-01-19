@@ -1,2 +1,7 @@
 <h3>{{pageHeading}}</h3>
 <em>{{quote.line}}</em>  - {{quote.author}}
+<br/>
+Counter is : <b>{{counter}}</b>
+<button (click)="incrementCount()">Count</button>
+
+<input type="number" [(ngModel)]="counter"/>

@@ -10,7 +10,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require("@angular/core");
 var app_models_1 = require("./app.models");
-var platform_browser_1 = require("@angular/platform-browser");
 var videos = [
     new app_models_1.VideoList(1, 'title1', 'https://www.youtube.com/embed/watch?v=e3djIqAGqZo', 'Angular 5 vid'),
     new app_models_1.VideoList(2, 'title2', 'https://www.youtube.com/embed/watch?v=e3djIqAGqZo', 'Angular 55 vid'),
@@ -19,16 +18,7 @@ var videos = [
     new app_models_1.VideoList(5, 'title5', 'https://www.youtube.com/embed/watch?v=e3djIqAGqZo', 'Angular 545 vid')
 ];
 var VideoService = (function () {
-    //let ds:DomSanitizer;
-    function VideoService(domSanitizer) {
-        this.domSanitizer = domSanitizer;
-        //this.ds = domSanitizer;
-        var v; //for for loop LHS should be any
-        for (v in videos) {
-            console.log("before sanitize: " + v.url);
-            v.url = this.domSanitizer.bypassSecurityTrustResourceUrl(v.url);
-            console.log("after sanitize: " + v.url);
-        }
+    function VideoService() {
     }
     VideoService.getVideoById = function (id) {
         return videos[id];
@@ -36,11 +26,11 @@ var VideoService = (function () {
     VideoService.getAllVideos = function () {
         return videos;
     };
-    VideoService = __decorate([
-        core_1.Injectable(), 
-        __metadata('design:paramtypes', [platform_browser_1.DomSanitizer])
-    ], VideoService);
     return VideoService;
 }());
+VideoService = __decorate([
+    core_1.Injectable(),
+    __metadata("design:paramtypes", [])
+], VideoService);
 exports.VideoService = VideoService;
 //# sourceMappingURL=app.services.js.map

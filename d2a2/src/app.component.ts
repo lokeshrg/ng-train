@@ -11,8 +11,22 @@ import {QuoteService} from "./app.services";
 export class AppComponent{
     pageHeading:string = "sample quote!";
     quote:IQuote;
+    private _counter:number = 0;
+
     constructor(){
         let quoteSvc = new QuoteService();
         this.quote = quoteSvc.getRandomQuote();
+    }
+
+    get counter(): number {
+        return this._counter;
+    }
+
+    set counter(value: number) {
+        this._counter = value;
+    }
+
+    public incrementCount(){
+        this.counter++;
     }
 }

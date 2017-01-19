@@ -13,9 +13,23 @@ var app_services_1 = require("./app.services");
 var AppComponent = (function () {
     function AppComponent() {
         this.pageHeading = "sample quote!";
+        this._counter = 0;
         var quoteSvc = new app_services_1.QuoteService();
         this.quote = quoteSvc.getRandomQuote();
     }
+    Object.defineProperty(AppComponent.prototype, "counter", {
+        get: function () {
+            return this._counter;
+        },
+        set: function (value) {
+            this._counter = value;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    AppComponent.prototype.incrementCount = function () {
+        this.counter++;
+    };
     return AppComponent;
 }());
 AppComponent = __decorate([

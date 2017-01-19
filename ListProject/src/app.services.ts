@@ -1,7 +1,6 @@
 
 import {Injectable} from "@angular/core";
 import {VideoList} from "./app.models";
-import {DomSanitizer} from "@angular/platform-browser";
 
 let videos:Array<VideoList>=[
     new VideoList(1, 'title1', 'https://www.youtube.com/embed/watch?v=e3djIqAGqZo', 'Angular 5 vid'),
@@ -13,15 +12,7 @@ let videos:Array<VideoList>=[
 
 @Injectable()
 export class VideoService{
-    //let ds:DomSanitizer;
-    constructor(private domSanitizer:DomSanitizer){
-        //this.ds = domSanitizer;
-        let v:any; //for for loop LHS should be any
-        for(v in videos){
-            console.log("before sanitize: "+v.url);
-            v.url = this.domSanitizer.bypassSecurityTrustResourceUrl(v.url);
-            console.log("after sanitize: "+v.url);
-        }
+    constructor(){
     }
     public static getVideoById(id:number):VideoList{
         return videos[id];

@@ -11,15 +11,26 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require("@angular/core");
 var app_models_1 = require("./app.models");
 var app_services_1 = require("./app.services");
+var platform_browser_1 = require("@angular/platform-browser");
 var AppComponent = (function () {
-    function AppComponent() {
+    function AppComponent(domSanitizer) {
+        this.domSanitizer = domSanitizer;
         this.pageTitle = "sample play list!";
         this.selVid = new app_models_1.VideoList(0, '', '', '');
+        var v; //for for loop LHS should be any
+        for (v in this.videos) {
+            console.log("before sanitize: " + v.url);
+            v.url = this.domSanitizer.bypassSecurityTrustResourceUrl(v.url);
+            console.log("after sanitize: " + v.url);
+        }
         this.videos = app_services_1.VideoService.getAllVideos();
     }
     AppComponent.prototype.onNotify = function (video) {
         console.log("Selected Video(in parent)" + JSON.stringify(video));
         this.selVid = video;
+    };
+    AppComponent.prototype.closeVideo = function () {
+        this.selVid = new app_models_1.VideoList(0, '', '', '');
     };
     return AppComponent;
 }());
@@ -28,7 +39,7 @@ AppComponent = __decorate([
         selector: "app",
         templateUrl: "./partials/app.component.html"
     }),
-    __metadata("design:paramtypes", [])
+    __metadata("design:paramtypes", [platform_browser_1.DomSanitizer])
 ], AppComponent);
 exports.AppComponent = AppComponent;
 //# sourceMappingURL=app.component.js.map

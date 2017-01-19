@@ -2,9 +2,10 @@
   "name": "application-name",
   "version": "0.0.1",
   "dependencies": {
-    "@angular/common": "^2.4.3",
+    "@angular/common": "^2.4.4",
     "@angular/compiler": "^2.4.3",
-    "@angular/core": "^2.4.3",
+    "@angular/core": "^2.4.4",
+    "@angular/forms": "^2.4.4",
     "@angular/platform-browser": "^2.4.3",
     "@angular/platform-browser-dynamic": "^2.4.3",
     "@types/core-js": "^0.9.35",
