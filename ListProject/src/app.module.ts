@@ -2,12 +2,11 @@
 import {NgModule} from "@angular/core"
 import {BrowserModule} from "@angular/platform-browser"
 import {AppComponent} from "./app.component"
-//import {QuoteService} from "./app.services"
+import {VideoListComponent} from "./video.list.component";
 
 @NgModule({
     imports: [BrowserModule],
-    declarations: [AppComponent],
-   // providers: [QuoteService],
+    declarations: [AppComponent, VideoListComponent],
     bootstrap: [AppComponent]
 })
 

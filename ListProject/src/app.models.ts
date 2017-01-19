@@ -4,7 +4,6 @@ export class VideoList{
     private title:string,
     private url:string,
     private description?:string){
-
     }
 
 };

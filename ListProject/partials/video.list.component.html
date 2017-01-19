@@ -1,0 +1,24 @@
+
+<b>List of Videos</b>
+<table class="table table-striped">
+    <tr>
+        <th>ID</th>
+        <th>Title</th>
+        <th>URL</th>
+        <th>Description</th>
+        <th>Link</th>
+    </tr>
+    <tr *ngFor= "let video of myVideos">
+        <td>{{video.id}}</td>
+        <td>{{video.title}}</td>
+        <td>{{video.url}}</td>
+        <td>{{video.description}}</td>
+        <td>
+            <button (click)="showVideo(video)" class="glyphicon glyphicon-facetime-video">View</button>
+        </td>
+    </tr>
+
+    <tr *ngIf="myVideos.length==0" class="has-error">
+        <td colspan="5">No Videos found!</td>
+    </tr>
+</table>

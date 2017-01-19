@@ -9,19 +9,26 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
+var app_models_1 = require("./app.models");
+var app_services_1 = require("./app.services");
 var AppComponent = (function () {
     function AppComponent() {
         this.pageTitle = "sample play list!";
-        //vid
+        this.selVid = new app_models_1.VideoList(0, '', '', '');
+        this.videos = app_services_1.VideoService.getAllVideos();
     }
-    AppComponent = __decorate([
-        core_1.Component({
-            selector: "my-app",
-            templateUrl: "./partials/app.component.html"
-        }), 
-        __metadata('design:paramtypes', [])
-    ], AppComponent);
+    AppComponent.prototype.onNotify = function (video) {
+        console.log("Selected Video(in parent)" + JSON.stringify(video));
+        this.selVid = video;
+    };
     return AppComponent;
 }());
+AppComponent = __decorate([
+    core_1.Component({
+        selector: "app",
+        templateUrl: "./partials/app.component.html"
+    }),
+    __metadata("design:paramtypes", [])
+], AppComponent);
 exports.AppComponent = AppComponent;
 //# sourceMappingURL=app.component.js.map

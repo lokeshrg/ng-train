@@ -1,16 +1,8 @@
 <h3 class="jumbotron">{{pageTitle}}</h3>
-<b>List of Videos</b>
-<table class="table table-striped">
-    <tr>
-        <th>ID</th>
-        <th>Title</th>
-        <th>URL</th>
-        <th>Description</th>
-    </tr>
-    <tr *ngfor="let video of videos">
-        <td>{{video.id}}</td>
-        <td>{{video.title}}</td>
-        <td>{{video.url}}</td>
-        <td>{{video.description}}</td>
-    </tr>
-</table>
+<video-list [myVideos]="videos" (notify)="onNotify($event)"></video-list>
+<!-- here video-list is the child component
+ and app is the parent component
+ we are establishing communication through notify - event handler[emitter]-->
+<div *ngIf="selVid.id!=0" class="embed-responsive embed-responsive-16by9">
+    <iframe class="embed-responsive-item" src="{{selVid.url}}"></iframe>
+</div>
