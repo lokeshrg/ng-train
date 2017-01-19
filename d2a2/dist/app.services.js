@@ -22,11 +22,11 @@ var QuoteService = (function () {
     QuoteService.prototype.getRandomQuote = function () {
         return this.svcQuote[Math.floor(Math.random() * quotes.length)];
     };
+    QuoteService = __decorate([
+        core_1.Injectable(), 
+        __metadata('design:paramtypes', [])
+    ], QuoteService);
     return QuoteService;
 }());
-QuoteService = __decorate([
-    core_1.Injectable(),
-    __metadata("design:paramtypes", [])
-], QuoteService);
 exports.QuoteService = QuoteService;
 //# sourceMappingURL=app.services.js.map

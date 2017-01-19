@@ -5,3 +5,12 @@ Counter is : <b>{{counter}}</b>
 <button (click)="incrementCount()">Count</button>
 
 <input type="number" [(ngModel)]="counter"/>
+<br/>
+{{msg}}<button (click)="getExternalData()">Get Data</button>
+
+<ol>
+    <li *ngFor="let d of details">
+        {{d.fname}}
+        {{d.lname}}
+    </li>
+</ol>

@@ -10,13 +10,24 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require("@angular/core");
 var app_services_1 = require("./app.services");
+var http_1 = require("@angular/http");
 var AppComponent = (function () {
-    function AppComponent() {
+    function AppComponent(ht) {
+        this.ht = ht;
         this.pageHeading = "sample quote!";
+        this.msg = 'text';
         this._counter = 0;
         var quoteSvc = new app_services_1.QuoteService();
         this.quote = quoteSvc.getRandomQuote();
     }
+    AppComponent.prototype.getExternalData = function () {
+        var _this = this;
+        this.ht.get('http://www.filltext.com/?rows=10&fname={firstName}&lname={lastName}')
+            .subscribe(function (response) {
+            console.log("Success: " + response);
+            _this.details = response.json();
+        }, function (error) { return console.log("Error: " + error); }, function () { return console.log("Completed!"); });
+    };
     Object.defineProperty(AppComponent.prototype, "counter", {
         get: function () {
             return this._counter;
@@ -30,14 +41,14 @@ var AppComponent = (function () {
     AppComponent.prototype.incrementCount = function () {
         this.counter++;
     };
+    AppComponent = __decorate([
+        core_1.Component({
+            selector: "quote-app",
+            templateUrl: "./partials/app.component.html"
+        }), 
+        __metadata('design:paramtypes', [http_1.Http])
+    ], AppComponent);
     return AppComponent;
 }());
-AppComponent = __decorate([
-    core_1.Component({
-        selector: "quote-app",
-        templateUrl: "./partials/app.component.html"
-    }),
-    __metadata("design:paramtypes", [])
-], AppComponent);
 exports.AppComponent = AppComponent;
 //# sourceMappingURL=app.component.js.map
