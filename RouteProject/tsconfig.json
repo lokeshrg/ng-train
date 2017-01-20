@@ -1,0 +1,23 @@
+/**
+*
+*/
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "sourceMap": true,
+    "rootDir": "src",
+    "outDir": "dist",
+    "noEmitOnError": true,
+    "moduleResolution": "node", //classic [https://www.typescriptlang.org/docs/handbook/module-resolution.html#classic]
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true //even in ES6, decorators are not standardized !? so inform compiler
+  }
+/*,
+  "exclude": [
+    "node_modules"
+  ]
+  // as we have already mentioned rootDir, no need to mention node_modules as it is outside the rootDir folder
+  // if it is inside the rootDir, u can mention exclude option
+  */
+}
