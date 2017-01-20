@@ -60,14 +60,14 @@ var AppComponent = (function () {
     AppComponent.prototype.incrementCount = function () {
         this.counter++;
     };
+    AppComponent = __decorate([
+        core_1.Component({
+            selector: "quote-app",
+            templateUrl: "./partials/app.component.html"
+        }), 
+        __metadata('design:paramtypes', [http_1.Http, app_services_1.QuoteService])
+    ], AppComponent);
     return AppComponent;
 }());
-AppComponent = __decorate([
-    core_1.Component({
-        selector: "quote-app",
-        templateUrl: "./partials/app.component.html"
-    }),
-    __metadata("design:paramtypes", [http_1.Http, app_services_1.QuoteService])
-], AppComponent);
 exports.AppComponent = AppComponent;
 //# sourceMappingURL=app.component.js.map
