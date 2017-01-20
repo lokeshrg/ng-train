@@ -8,6 +8,7 @@ import {AboutComponent} from "./about.component"
 import {ContactComponent} from "./contact.component"
 import {FeedbackComponent} from "./feedback.component"
 import {NotFoundComponent} from "./not.found.component"
+import {ReverseTextPipe} from "./app.pipes"
 
 const routeList = [
     {path:"", component: HomeComponent},
@@ -18,9 +19,10 @@ const routeList = [
 ];
 
 @NgModule({
-    imports: [BrowserModule, RouterModule.forRoot(routeList)],
+    imports: [BrowserModule, RouterModule.forRoot(routeList, {useHash: true})],
+    // use hash is to reload the page - adds # to url
     declarations: [AppComponent, NotFoundComponent, HomeComponent,
-        ContactComponent, AboutComponent, FeedbackComponent],
+        ContactComponent, AboutComponent, FeedbackComponent, ReverseTextPipe],
     bootstrap: [AppComponent]
 })
 

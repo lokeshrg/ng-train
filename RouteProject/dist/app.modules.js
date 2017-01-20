@@ -14,6 +14,7 @@ var about_component_1 = require("./about.component");
 var contact_component_1 = require("./contact.component");
 var feedback_component_1 = require("./feedback.component");
 var not_found_component_1 = require("./not.found.component");
+var app_pipes_1 = require("./app.pipes");
 var routeList = [
     { path: "", component: home_component_1.HomeComponent },
     { path: "about", component: about_component_1.AboutComponent },
@@ -28,9 +29,10 @@ var AppModule = (function () {
 }());
 AppModule = __decorate([
     core_1.NgModule({
-        imports: [platform_browser_1.BrowserModule, router_1.RouterModule.forRoot(routeList)],
+        imports: [platform_browser_1.BrowserModule, router_1.RouterModule.forRoot(routeList, { useHash: true })],
+        // use hash is to reload the page - adds # to url
         declarations: [app_component_1.AppComponent, not_found_component_1.NotFoundComponent, home_component_1.HomeComponent,
-            contact_component_1.ContactComponent, about_component_1.AboutComponent, feedback_component_1.FeedbackComponent],
+            contact_component_1.ContactComponent, about_component_1.AboutComponent, feedback_component_1.FeedbackComponent, app_pipes_1.ReverseTextPipe],
         bootstrap: [app_component_1.AppComponent]
     })
 ], AppModule);

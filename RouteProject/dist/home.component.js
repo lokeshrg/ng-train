@@ -8,12 +8,20 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var core_1 = require("@angular/core");
 var HomeComponent = (function () {
     function HomeComponent() {
+        this.price = 100.34;
+        this.myDate = new Date();
+        this.productName = 'MomoM isi a incocni palinilap';
     }
     return HomeComponent;
 }());
 HomeComponent = __decorate([
     core_1.Component({
-        template: '<h3>975666</h3>'
+        styles: ['h3 {color: blue}'],
+        template: '<h3>975666</h3>' //templateUrl
+            + '{{price | currency | lowercase}}' // chaining - :"CLP"
+            + '<br/>{{myDate | date: fullDate}}'
+            + '<br/>{{productName}} >>>> when reversed becomes  >>>'
+            + '<br/>{{productName | reverseText}}'
     })
 ], HomeComponent);
 exports.HomeComponent = HomeComponent;
